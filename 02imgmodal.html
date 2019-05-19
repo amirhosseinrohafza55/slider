@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>well kommen</title>
+    <style>
+        * {
+            padding: 0px;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        #myimage{
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #myimage:hover{
+        opacity: .7;
+        }
+        .modal{
+            /* display: none; */
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 80%;
+            height: 80%;
+            overflow: auto;
+            /* background: rgba(0, 0, 0, .9); */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="myimage" src="slider1/img_nature_wide.jpg" alt="nature">
+    <div id="mymodal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>
